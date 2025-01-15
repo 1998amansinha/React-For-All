@@ -1,0 +1,130 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo>img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-items>ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.nav-items>ul>li {
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-items>ul>li:hover {
+    color: #007BFF;
+}
+
+/* Body Section */
+#body {
+    border: 2px solid black;
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+/* Search Section */
+.search {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search button {
+    padding: 7px 10px;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search button:hover,
+.search button:focus {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Restaurant Cards Section */
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#res-card {
+    border: 1px solid black;
+    margin: 5px;
+    width: 180px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border-radius: 5px;
+    /* Rounded corners for better visuals */
+}
+
+#res-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-bottom: 1px solid #ddd;
+}
+
+#res-card h4 {
+    font-size: 16px;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+#res-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Hover Effect */
+#res-card:hover {
+    transform: translateY(-5px);
+    /* Lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow for depth */
+    border-color: #007BFF;
+    /* Change border color on hover */
+}
+
+#res-card:hover img {
+    transform: scale(1.05);
+    /* Slight zoom on image */
+}
+
+#res-card:hover h4 {
+    color: #007BFF;
+    /* Highlight title on hover */
+}

@@ -1,0 +1,29 @@
+{
+  "name": "react-theory",
+  "version": "1.0.0",
+  "description": "This package contains related to the basic and advance mechansim of React",
+  "main": "App.js",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1998amansinha/React-For-All.git"
+  },
+  "author": "Aman Sinha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1998amansinha/React-For-All/issues"
+  },
+  "homepage": "https://github.com/1998amansinha/React-For-All#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
